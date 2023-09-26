@@ -4,8 +4,23 @@ import Title, { SubTitle } from "./components/Title.jsx";
 import TextInput from "./elements/TextInput.jsx";
 import Button1 from "./elements/Button.jsx";
 import CardProfile from "./components/CardProfile.jsx";
+import {useState} from "react";
 
 function App() {
+
+    const [name, setName] = useState('');
+
+    const handleChange = event => {
+        setName(event.target.value);
+    }
+
+    const handleClick = event => {
+        event.preventDefault();
+
+        alert(`Haloo, ${name}`);
+    }
+
+
   return (
     <>
       <div className="App">
@@ -45,8 +60,8 @@ function App() {
             />
           </div>
           <div className="Form">
-            <TextInput />
-            <Button1>Cari</Button1>
+            <TextInput onChange={handleChange} value={name} />
+            <Button1 onClick={handleClick}>Cari</Button1>
           </div>
         </header>
       </div>
