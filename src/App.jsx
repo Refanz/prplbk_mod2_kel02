@@ -47,7 +47,6 @@ function App() {
               title={"Mahasiswa"}
               nim={"21120120140089"}
               college={"Universitas Diponegoro"}
-              g
             />
             <CardProfile
               src={"https://i0.wp.com/dianisa.com/wp-content/uploads/2022/11/4-Gambar-pemandangan-gunung-dengan-sungai.jpg?resize=1280%2C720&ssl=1"}
@@ -56,7 +55,6 @@ function App() {
               title={"Mahasiswa"}
               nim={"21120120140141"}
               college={"Universitas Diponegoro"}
-              g
             />
              <CardProfile
               src={"https://i0.wp.com/dianisa.com/wp-content/uploads/2022/11/4-Gambar-pemandangan-gunung-dengan-sungai.jpg?resize=1280%2C720&ssl=1"}
@@ -65,7 +63,6 @@ function App() {
               title={"Mahasiswa"}
               nim={"21120120140156"}
               college={"Universitas Diponegoro"}
-              g
             />
           </div>
           <div className="Form">
