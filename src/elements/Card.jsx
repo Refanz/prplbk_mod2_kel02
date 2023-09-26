@@ -22,6 +22,11 @@ const CardNIM = styled.p`
   font-size: 20px;
 `;
 
+const CardEmail = styled.p`
+  color: grey;
+  font-size: 15px;
+`;
+
 const CardButton = styled.button`
   border: none;
   outline: 0;
@@ -40,4 +45,4 @@ const CardButton = styled.button`
 `;
 
 export default Card;
-export {CardTitle, CardNIM, CardButton}
+export {CardTitle, CardNIM, CardButton, CardEmail}

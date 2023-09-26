@@ -1,10 +1,9 @@
 import './App.css';
 
 import Title, {SubTitle} from "./components/Title.jsx";
-import Card, {CardButton, CardNIM, CardTitle} from "./elements/Card.jsx";
-import ImageCard from "./elements/ImageCard.jsx";
 import TextInput from "./elements/TextInput.jsx";
 import Button1 from "./elements/Button.jsx";
+import CardProfile from "./components/CardProfile.jsx";
 
 
 function App() {
@@ -15,19 +14,17 @@ function App() {
                     <Title/>
                     <SubTitle/>
                     <div className='Components'>
-                        <Card>
-                            <ImageCard
-                                src={"https://png.pngtree.com/thumb_back/fw800/background/20230523/pngtree-beautiful-sea-view-in-hot-summer-image_2759007.jpg"}/>
-                            <h3>Refanda Surya Saputra</h3>
-                            <CardTitle>Mahasiswa</CardTitle>
-                            <CardNIM>21120120120022</CardNIM>
-
-                            <p>Universitas Diponegoro</p>
-                            <CardButton>Github</CardButton>
-                        </Card>
+                        <CardProfile
+                            src={"https://i0.wp.com/dianisa.com/wp-content/uploads/2022/11/4-Gambar-pemandangan-gunung-dengan-sungai.jpg?resize=1280%2C720&ssl=1"}
+                            name={"Refanda Surya Saputra"}
+                            email={"refandasuryasaputra@gmail.com"}
+                            title={"Mahasiswa"}
+                            nim={"21120120120022"}
+                            college={"Universitas Diponegoro"}
+                        />
                     </div>
                     <div className='Form'>
-                        <TextInput/>
+                        <TextInput />
                         <Button1>Cari</Button1>
                     </div>
 
