@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+
+import Title, {SubTitle} from "./components/Title.jsx";
+import Card, {CardButton, CardNIM, CardTitle} from "./elements/Card.jsx";
+import ImageCard from "./elements/ImageCard.jsx";
+import TextInput from "./elements/TextInput.jsx";
+import Button1 from "./elements/Button.jsx";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <>
+            <div className="App">
+                <header className="App-header">
+                    <Title/>
+                    <SubTitle/>
+                    <div className='Components'>
+                        <Card>
+                            <ImageCard
+                                src={"https://png.pngtree.com/thumb_back/fw800/background/20230523/pngtree-beautiful-sea-view-in-hot-summer-image_2759007.jpg"}/>
+                            <h3>Refanda Surya Saputra</h3>
+                            <CardTitle>Mahasiswa</CardTitle>
+                            <CardNIM>21120120120022</CardNIM>
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+                            <p>Universitas Diponegoro</p>
+                            <CardButton>Github</CardButton>
+                        </Card>
+                    </div>
+                    <div className='Form'>
+                        <TextInput/>
+                        <Button1>Cari</Button1>
+                    </div>
+
+                </header>
+            </div>
+        </>
+    );
 }
 
-export default App
+
+export default App;
